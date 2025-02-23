@@ -28,7 +28,7 @@
   --spacing-50: 3.125rem;
 
   --font-body: clamp(1rem, 0.8897rem + 0.3676vw, 1.125rem);
-  --font-h3: clamp(1.125rem, 1.0147rem + 0.3676vw, 1.25rem);
+  --font-h3: clamp(1.25rem, 1.0294rem + 0.7353vw, 1.5rem);
   --font-h2: clamp(2.375rem, 1.7132rem + 2.2059vw, 3.125rem);
   --font-h1: clamp(1.875rem, -0.1103rem + 6.6176vw, 4.125rem);
 
@@ -186,6 +186,12 @@ a {
     justify-content: space-between;
     gap: var(--spacing-lg);
     padding-inline: var(--spacing-container);
+    margin-top: 1.5rem;
+
+    & a{
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
   }
 
   & .menu-cards {
@@ -193,10 +199,32 @@ a {
     place-content: center;
     grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
     gap: var(--spacing-xl);
+    margin-top: 3rem;
 
     & .menu-card {
       padding: var(--spacing-xl);
-      border: 2rem solid 2px;
+      border: 1px solid blueviolet ;
+      box-shadow: 0px 0px 3px blueviolet;
+      border-radius: 0.5rem ;
+      padding: var(--spacing-md) var(--spacing-lg);
+      background-color: #ffffff13;
+      
+
+      & .card-title{
+        margin-bottom: 0.5rem;
+        font-size: var(--font-h3);
+      }
+
+      & .sub-card{
+        margin-bottom: 1rem;
+      }
+
+      & .price{
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+
+      
 
      & .img-container{
       width: 100%;
@@ -210,6 +238,13 @@ a {
        }
      }
     }
+  }
+
+  & .primary-button{
+       display: grid;
+       place-content: center;
+    margin-inline: auto; 
+    margin-top: 2rem;
   }
 }
 
